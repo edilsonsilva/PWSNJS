@@ -11,7 +11,7 @@ mongoose.connect('mongodb://localhost/msgdb');
 
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(bodyParser.json());
-var routes = requires('./api/routes/msgRoutes');
+var routes = require('./api/routes/msgRoutes');
 routes(app);
 
 
